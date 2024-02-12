@@ -12,11 +12,18 @@
 
 / {
     macros {
-        new_macro: new_macro {
+        WHMRL: WHMRL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&ht LEFT_ALT NUMBER_2 &kp &kp>;
-            label = "NEW_MACRO";
+            bindings = <&ht LEFT_ALT S>;
+            label = "WHMRL";
+        };
+
+        WHRMR: WHRMR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "WHRMR";
         };
     };
 
