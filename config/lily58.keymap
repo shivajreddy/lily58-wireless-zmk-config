@@ -55,8 +55,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                               &trans     &trans                 &trans            &trans             &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans                               &kp GRAVE  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans  &trans  &trans  &trans  &trans  &trans                               &kp FSLH   &kp RIGHT_PARENTHESIS  &trans            &trans             &kp UNDERSCORE  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans             &kp BSLH   &trans                 &trans            &kp PIPE           &kp QUESTION    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                               &trans     &kp RIGHT_PARENTHESIS  &trans            &trans             &kp UNDERSCORE  &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans     &trans                 &trans            &kp PIPE           &kp QUESTION    &trans
                         &trans  &trans  &trans  &trans    &kp RIGHT_CONTROL  &trans     &trans                 &trans
             >;
         };
