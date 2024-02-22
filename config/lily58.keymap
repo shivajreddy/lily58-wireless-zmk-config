@@ -45,11 +45,11 @@
 
             display-name = "LEF";
             bindings = <
-&trans       &trans  &trans     &trans  &trans  &trans                    &trans        &trans                 &trans            &trans             &trans          &kp MINUS
-&kp LC(TAB)  &trans  &kp LC(W)  &trans  &trans  &trans                    &kp GRAVE     &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans       &trans  &trans     &trans  &trans  &trans                    &trans        &kp RIGHT_PARENTHESIS  &trans            &trans             &trans          &trans
-&trans       &trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans        &trans                 &trans            &kp PIPE           &kp QUESTION    &trans
-                                &trans  &trans  &trans  &trans    &trans  &kp LEFT_WIN  &kp LEFT_CONTROL       &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans                 &trans            &trans             &trans          &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp GRAVE     &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &kp RIGHT_PARENTHESIS  &trans            &trans             &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans                 &trans            &kp PIPE           &kp QUESTION    &trans
+                        &trans  &trans  &trans  &trans    &trans  &kp LEFT_WIN  &kp LEFT_CONTROL       &trans
             >;
         };
 
