@@ -111,26 +111,6 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LSFT)>;
         };
-
-        o_plus: o_plus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "O_PLUS";
-            bindings = <&kp O>, <&kp PLUS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
-        p_equal: p_equal {
-            compatible = "zmk,behavior-mod-morph";
-            label = "P_EQUAL";
-            bindings = <&kp P>, <&kp EQUAL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -140,8 +120,8 @@
 
         Base {
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4            &kp N5                                    &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &kp DEL
-&kp TAB         &kp Q         &kp W   &kp E         &kp R             &kp T                                     &kp Y      &u_udrscr  &i_minus      &o_plus     &p_equal        &bspc_delete
+&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4            &kp N5                                    &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &kp BACKSPACE
+&kp TAB         &kp Q         &kp W   &kp E         &kp R             &kp T                                     &kp Y      &u_udrscr  &i_minus      &kp O       &kp P           &kp EQUAL
 &kp ESC         &kp A         &kp S   &kp D         &kp F             &kp G                                     &h_l_prts  &j_r_prts  &k_l_brckt    &l_r_brckt  &apost_l_curly  &quote_r_curly
 &kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V             &kp B         &kp BACKSLASH    &kp GRAVE  &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
                                       &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE        &kp ENTER  &mo 1      &mo 2      &kp LEFT_WIN
