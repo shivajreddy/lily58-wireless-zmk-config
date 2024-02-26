@@ -37,11 +37,11 @@
 
         ALTPRESS {
             bindings = <
-&kp LS(LA(TILDE))   &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)                    &kp LA(N6)  &kp LA(N7)  &kp LA(N8)     &kp LA(N9)   &kp LA(N0)    &kp LA(BSPC)
-&kp LA(TAB)         &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)                     &kp LA(Y)   &kp LA(U)   &kp LA(I)      &kp LA(O)    &kp LA(P)     &kp LA(EQUAL)
-&kp LA(ESCAPE)      &kp LA(A)   &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)                     &kp LA(H)   &kp LA(J)   &kp LA(K)      &kp LA(L)    &kp LA(SEMI)  &kp LA(SQT)
-&kp LA(LEFT_SHIFT)  &kp LA(Z)   &kp LA(C)   &kp LA(X)   &kp LA(C)   &kp LA(B)   &trans    &trans  &kp LA(N)   &kp LA(M)   &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)  &kp LA(RSHFT)
-                                            &trans      &trans      &trans      &trans    &trans  &trans      &trans      &trans
+&kp LS(LA(TILDE))   &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)                    &kp LA(N6)    &kp LA(N7)  &kp LA(N8)     &kp LA(N9)   &kp LA(N0)    &kp DELETE
+&kp LA(TAB)         &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)                     &kp LA(Y)     &kp LA(U)   &kp LA(I)      &kp LA(O)    &kp LA(P)     &kp LA(EQUAL)
+&kp LA(ESCAPE)      &kp LA(A)   &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)                     &kp LA(H)     &kp LA(J)   &kp LA(K)      &kp LA(L)    &kp LA(SEMI)  &kp LA(SQT)
+&kp LA(LEFT_SHIFT)  &kp LA(Z)   &kp LA(C)   &kp LA(X)   &kp LA(C)   &kp LA(B)   &trans    &trans  &kp LA(N)     &kp LA(M)   &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)  &kp LA(RSHFT)
+                                            &trans      &trans      &trans      &trans    &trans  &kp LEFT_ALT  &trans      &trans
             >;
         };
 
@@ -55,11 +55,11 @@
 
             display-name = "RIG";
             bindings = <
-&trans  &trans  &trans  &trans   &trans  &trans                    &kp C_VOL_DN          &kp C_VOLUME_UP        &kp K_MUTE  &kp K_PREV  &kp K_NEXT      &kp K_PLAY_PAUSE
-&trans  &trans  &trans  &trans   &trans  &trans                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT    &kp RBKT    &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans  &trans  &trans  &kp DEL  &trans  &trans                    &kp LEFT              &kp DOWN               &kp UP      &kp RIGHT   &trans          &trans
-&trans  &trans  &trans  &trans   &trans  &trans  &trans    &trans  &trans                &trans                 &trans      &trans      &trans          &trans
-                        &trans   &trans  &trans  &trans    &trans  &trans                &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_VOL_DN          &kp C_VOLUME_UP        &kp K_MUTE  &kp K_PREV  &kp K_NEXT      &kp K_PLAY_PAUSE
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT    &kp RBKT    &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT              &kp DOWN               &kp UP      &kp RIGHT   &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                &trans                 &trans      &trans      &trans          &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans                &trans                 &trans
             >;
 
             label = "RIG";
