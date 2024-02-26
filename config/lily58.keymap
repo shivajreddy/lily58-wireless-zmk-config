@@ -22,22 +22,104 @@
             flavor = "hold-preferred";
         };
 
-        backspace_delete: backspace_delete {
+        bspc_delete: bspc_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
+            label = "BSPC_DELETE";
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
-        new_behavior: new_behavior {
+        apost_l_curly: apost_l_curly {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "APOST_L_CURLY";
             bindings = <&kp SEMICOLON>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        quote_r_curly: quote_r_curly {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTE_R_CURLY";
+            bindings = <&kp SQT>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        h_l_prts: h_l_prts {
+            compatible = "zmk,behavior-mod-morph";
+            label = "H_L_PRTS";
+            bindings = <&kp SQT>, <&kp LEFT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        j_r_prts: j_r_prts {
+            compatible = "zmk,behavior-mod-morph";
+            label = "J_R_PRTS";
+            bindings = <&kp SQT>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        k_l_brckt: k_l_brckt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "K_L_BRCKT";
+            bindings = <&kp K>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        l_r_brckt: l_r_brckt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "L_R_BRCKT";
+            bindings = <&kp L>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        y_udrscr: y_udrscr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Y_UDRSCR";
+            bindings = <&kp Y>, <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        u_minus: u_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_MINUS";
+            bindings = <&kp U>, <&kp MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        i_plus: i_plus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_PLUS";
+            bindings = <&kp I>, <&kp PLUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
     };
 
@@ -48,11 +130,11 @@
 
         Base {
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4            &kp N5                                    &kp N6  &kp N7  &kp N8        &kp N9   &kp N0         &backspace_delete
-&kp TAB         &kp Q         &kp W   &kp E         &kp R             &kp T                                     &kp Y   &kp U   &kp I         &kp O    &kp P          &kp EQUAL
-&kp ESC         &kp A         &kp S   &kp D         &kp F             &kp G                                     &kp H   &kp J   &kp K         &kp L    &new_behavior  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V             &kp B         &kp BACKSLASH    &kp GRAVE  &kp N   &kp M   &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
-                                      &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE        &kp ENTER  &mo 1   &mo 2   &kp LEFT_WIN
+&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4            &kp N5                                    &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &bspc_delete
+&kp TAB         &kp Q         &kp W   &kp E         &kp R             &kp T                                     &y_udrscr  &u_minus   &i_plus       &kp O       &kp P           &kp EQUAL
+&kp ESC         &kp A         &kp S   &kp D         &kp F             &kp G                                     &h_l_prts  &j_r_prts  &k_l_brckt    &l_r_brckt  &apost_l_curly  &quote_r_curly
+&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V             &kp B         &kp BACKSLASH    &kp GRAVE  &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
+                                      &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE        &kp ENTER  &mo 1      &mo 2      &kp LEFT_WIN
             >;
         };
 
