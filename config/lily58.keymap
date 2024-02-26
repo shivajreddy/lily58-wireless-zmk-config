@@ -55,7 +55,7 @@
         h_l_prts: h_l_prts {
             compatible = "zmk,behavior-mod-morph";
             label = "H_L_PRTS";
-            bindings = <&kp SQT>, <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp H>, <&kp LEFT_PARENTHESIS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -65,7 +65,7 @@
         j_r_prts: j_r_prts {
             compatible = "zmk,behavior-mod-morph";
             label = "J_R_PRTS";
-            bindings = <&kp SQT>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp J>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -92,30 +92,40 @@
             keep-mods = <(MOD_LSFT)>;
         };
 
-        y_udrscr: y_udrscr {
+        u_udrscr: u_udrscr {
             compatible = "zmk,behavior-mod-morph";
-            label = "Y_UDRSCR";
-            bindings = <&kp Y>, <&kp UNDER>;
+            label = "U_UDRSCR";
+            bindings = <&kp U>, <&kp UNDER>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
-        u_minus: u_minus {
+        i_minus: i_minus {
             compatible = "zmk,behavior-mod-morph";
-            label = "U_MINUS";
-            bindings = <&kp U>, <&kp MINUS>;
+            label = "I_MINUS";
+            bindings = <&kp I>, <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
-        i_plus: i_plus {
+        o_plus: o_plus {
             compatible = "zmk,behavior-mod-morph";
-            label = "I_PLUS";
-            bindings = <&kp I>, <&kp PLUS>;
+            label = "O_PLUS";
+            bindings = <&kp O>, <&kp PLUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        p_equal: p_equal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "P_EQUAL";
+            bindings = <&kp P>, <&kp EQUAL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -130,8 +140,8 @@
 
         Base {
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4            &kp N5                                    &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &bspc_delete
-&kp TAB         &kp Q         &kp W   &kp E         &kp R             &kp T                                     &y_udrscr  &u_minus   &i_plus       &kp O       &kp P           &kp EQUAL
+&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4            &kp N5                                    &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &kp DEL
+&kp TAB         &kp Q         &kp W   &kp E         &kp R             &kp T                                     &kp Y      &u_udrscr  &i_minus      &o_plus     &p_equal        &bspc_delete
 &kp ESC         &kp A         &kp S   &kp D         &kp F             &kp G                                     &h_l_prts  &j_r_prts  &k_l_brckt    &l_r_brckt  &apost_l_curly  &quote_r_curly
 &kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V             &kp B         &kp BACKSLASH    &kp GRAVE  &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
                                       &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE        &kp ENTER  &mo 1      &mo 2      &kp LEFT_WIN
@@ -148,11 +158,11 @@
 
             display-name = "RIG";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_VOL_DN          &kp C_VOLUME_UP        &kp K_MUTE  &kp K_PREV  &kp K_NEXT      &kp K_PLAY_PAUSE
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT    &kp RBKT    &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT              &kp DOWN               &kp UP      &kp RIGHT   &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                &trans                 &trans      &trans      &trans          &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans                &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE  &kp K_PREV  &kp K_NEXT  &kp K_PLAY_PAUSE
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans           &trans      &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT      &kp DOWN         &kp UP      &kp RIGHT   &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans           &trans      &trans      &trans      &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans        &trans           &trans
             >;
 
             label = "RIG";
