@@ -28,7 +28,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -38,7 +38,7 @@
             bindings = <&kp SEMICOLON>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -48,7 +48,7 @@
             bindings = <&kp SQT>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -58,7 +58,7 @@
             bindings = <&kp H>, <&kp LEFT_PARENTHESIS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -68,7 +68,7 @@
             bindings = <&kp J>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -78,7 +78,7 @@
             bindings = <&kp K>, <&kp LEFT_BRACKET>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -88,7 +88,7 @@
             bindings = <&kp L>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -98,7 +98,7 @@
             bindings = <&kp U>, <&kp UNDER>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
@@ -108,7 +108,7 @@
             bindings = <&kp I>, <&kp MINUS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
     };
@@ -120,11 +120,11 @@
 
         Base {
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4            &kp N5                                    &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &kp BACKSPACE
-&kp TAB         &kp Q         &kp W   &kp E         &kp R             &kp T                                     &kp Y      &u_udrscr  &i_minus      &kp O       &kp P           &kp EQUAL
-&kp ESC         &kp A         &kp S   &kp D         &kp F             &kp G                                     &h_l_prts  &j_r_prts  &k_l_brckt    &l_r_brckt  &apost_l_curly  &quote_r_curly
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V             &kp B         &kp BACKSLASH    &kp GRAVE  &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
-                                      &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE        &kp ENTER  &mo 1      &mo 2      &kp LEFT_WIN
+&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4        &kp N5                                        &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &kp BACKSPACE
+&kp TAB         &kp Q         &kp W   &kp E         &kp R         &kp T                                         &kp Y      &u_udrscr  &i_minus      &kp O       &kp P           &kp EQUAL
+&kp ESC         &kp A         &kp S   &kp D         &kp F         &kp G                                         &h_l_prts  &j_r_prts  &k_l_brckt    &l_r_brckt  &apost_l_curly  &quote_r_curly
+&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V         &kp B             &kp BACKSLASH    &kp GRAVE  &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
+                                      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE        &kp ENTER  &mo 1      &mo 2      &kp LEFT_WIN
             >;
         };
 
