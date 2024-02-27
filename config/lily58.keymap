@@ -32,80 +32,50 @@
             keep-mods = <(MOD_LSFT)>;
         };
 
-        apost_l_curly: apost_l_curly {
+        h_minus: h_minus {
             compatible = "zmk,behavior-mod-morph";
-            label = "APOST_L_CURLY";
-            bindings = <&kp SEMICOLON>, <&kp LEFT_BRACE>;
+            label = "H_MINUS";
+            bindings = <&kp H>, <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
-        quote_r_curly: quote_r_curly {
+        j_l_prts: j_l_prts {
             compatible = "zmk,behavior-mod-morph";
-            label = "QUOTE_R_CURLY";
-            bindings = <&kp SQT>, <&kp RIGHT_BRACE>;
+            label = "J_L_PRTS";
+            bindings = <&kp J>, <&kp LEFT_PARENTHESIS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
-        h_l_prts: h_l_prts {
+        k_r_parnts: k_r_parnts {
             compatible = "zmk,behavior-mod-morph";
-            label = "H_L_PRTS";
-            bindings = <&kp H>, <&kp LEFT_PARENTHESIS>;
+            label = "K_R_PARNTS";
+            bindings = <&kp K>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
-        j_r_prts: j_r_prts {
+        l_l_brckt: l_l_brckt {
             compatible = "zmk,behavior-mod-morph";
-            label = "J_R_PRTS";
-            bindings = <&kp J>, <&kp RIGHT_PARENTHESIS>;
+            label = "L_L_BRCKT";
+            bindings = <&kp L>, <&kp LEFT_BRACKET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LSFT)>;
         };
 
-        k_l_brckt: k_l_brckt {
+        semi_r_brack: semi_r_brack {
             compatible = "zmk,behavior-mod-morph";
-            label = "K_L_BRCKT";
-            bindings = <&kp K>, <&kp LEFT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
-        l_r_brckt: l_r_brckt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "L_R_BRCKT";
-            bindings = <&kp L>, <&kp RIGHT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
-        u_udrscr: u_udrscr {
-            compatible = "zmk,behavior-mod-morph";
-            label = "U_UDRSCR";
-            bindings = <&kp U>, <&kp UNDER>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
-        i_minus: i_minus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "I_MINUS";
-            bindings = <&kp I>, <&kp MINUS>;
+            label = "SEMI_R_BRACK";
+            bindings = <&kp SEMICOLON>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -120,11 +90,11 @@
 
         Base {
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4        &kp N5                                        &kp N6     &kp N7     &kp N8        &kp N9      &kp N0          &kp BACKSPACE
-&kp TAB         &kp Q         &kp W   &kp E         &kp R         &kp T                                         &kp Y      &u_udrscr  &i_minus      &kp O       &kp P           &kp EQUAL
-&kp ESC         &kp A         &kp S   &kp D         &kp F         &kp G                                         &h_l_prts  &j_r_prts  &k_l_brckt    &l_r_brckt  &apost_l_curly  &quote_r_curly
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V         &kp B             &kp BACKSLASH    &kp GRAVE  &kp N      &kp M      &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
-                                      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE        &kp ENTER  &mo 1      &mo 2      &kp LEFT_WIN
+&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4        &kp N5                                        &kp N6    &kp N7     &kp N8        &kp N9      &kp N0         &kp BACKSPACE
+&kp TAB         &kp Q         &kp W   &kp E         &kp R         &kp T                                         &kp Y     &kp U      &kp I         &kp O       &kp P          &kp EQUAL
+&kp ESC         &kp A         &kp S   &kp D         &kp F         &kp G                                         &h_minus  &j_l_prts  &k_r_parnts   &l_l_brckt  &semi_r_brack  &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V         &kp B             &kp BACKSLASH    &kp GRAVE  &kp N     &kp M      &kp COMMA     &kp DOT     &kp FSLH       &kp RSHFT
+                                      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE        &kp ENTER  &mo 1     &mo 2      &kp LEFT_WIN
             >;
         };
 
@@ -162,11 +132,11 @@
 
         Dota2 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans   &trans    &trans
+&trans      &trans  &trans  &trans  &trans  &trans                       &kp Y   &kp U   &kp I      &kp O    &kp P     &kp EQUAL
+&trans      &trans  &trans  &trans  &trans  &trans                       &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&trans      &trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                            &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans
             >;
         };
     };
