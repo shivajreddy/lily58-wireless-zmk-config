@@ -16,7 +16,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         h_minus: h_minus {
@@ -25,7 +25,7 @@
             bindings = <&kp H>, <&kp MINUS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         j_l_prts: j_l_prts {
@@ -34,7 +34,7 @@
             bindings = <&kp J>, <&kp LEFT_PARENTHESIS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         k_r_parnts: k_r_parnts {
@@ -43,7 +43,7 @@
             bindings = <&kp K>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         l_l_brckt: l_l_brckt {
@@ -52,7 +52,7 @@
             bindings = <&kp L>, <&kp LEFT_BRACKET>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         semi_r_brack: semi_r_brack {
@@ -61,7 +61,7 @@
             bindings = <&kp SEMICOLON>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
     };
 
