@@ -63,6 +63,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "hold_tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            quick-tap-ms = <150>;
+            tapping-term-ms = <220>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -72,11 +83,11 @@
 
         Base {
             bindings = <
-&kp GRAVE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4        &kp N5                                        &kp N6  &kp N7  &kp N8        &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q         &kp W   &kp E         &kp R         &kp T                                         &kp Y   &kp U   &kp I         &kp O    &kp P     &kp EQUAL
-&kp ESC         &kp A         &kp S   &kp D         &kp F         &kp G                                         &kp H   &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V         &kp B             &kp BACKSLASH    &kp GRAVE  &kp N   &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
-                                      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE        &kp ENTER  &mo 1   &mo 2   &kp LEFT_WIN
+&kp GRAVE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4        &kp N5                                            &kp N6  &kp N7  &kp N8        &kp N9   &kp N0    &kp ENTER
+&kp TAB         &kp Q         &kp W   &kp E         &kp R         &kp T                                             &kp Y   &kp U   &kp I         &kp O    &kp P     &kp EQUAL
+&kp ESC         &kp A         &kp S   &kp D         &kp F         &kp G                                             &kp H   &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V         &kp B             &kp BACKSLASH    &kp GRAVE      &kp N   &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
+                                      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE        &kp BACKSPACE  &mo 1   &mo 2   &kp LEFT_WIN
             >;
         };
 
@@ -122,13 +133,13 @@
             >;
         };
 
-        layer_4 {
+        base_backup {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp GRAVE       &kp NUMBER_1  &kp N2  &kp N3        &kp N4        &kp N5                                        &kp N6  &kp N7  &kp N8        &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q         &kp W   &kp E         &kp R         &kp T                                         &kp Y   &kp U   &kp I         &kp O    &kp P     &kp EQUAL
+&kp ESC         &kp A         &kp S   &kp D         &kp F         &kp G                                         &kp H   &kp J   &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V         &kp B             &kp BACKSLASH    &kp GRAVE  &kp N   &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
+                                      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE        &kp ENTER  &mo 1   &mo 2   &kp LEFT_WIN
             >;
         };
     };
