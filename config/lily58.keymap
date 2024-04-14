@@ -101,11 +101,11 @@
 
             display-name = "RIG";
             bindings = <
-&trans  &trans  &trans  &trans   &trans  &trans                    &trans     &trans                &trans                 &trans            &trans             &trans
-&trans  &trans  &trans  &trans   &trans  &trans                    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans  &trans  &kp DEL  &trans  &trans                    &kp LEFT   &kp DOWN              &kp UP                 &kp RIGHT         &trans             &trans
-&trans  &trans  &trans  &trans   &trans  &trans  &trans    &trans  &trans     &trans                &trans                 &trans            &trans             &trans
-                        &trans   &trans  &trans  &trans    &trans  &trans     &trans                &trans
+&trans  &trans  &trans   &trans   &trans   &trans                    &trans     &trans                &trans                 &trans            &trans             &trans
+&trans  &trans  &trans   &trans   &trans   &trans                    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans  &kp F15  &kp DEL  &trans   &trans                    &kp LEFT   &kp DOWN              &kp UP                 &kp RIGHT         &trans             &trans
+&trans  &trans  &trans   &kp F13  &kp F14  &trans  &trans    &trans  &trans     &trans                &trans                 &trans            &trans             &trans
+                         &trans   &trans   &trans  &trans    &trans  &trans     &trans                &trans
             >;
 
             label = "RIG";
