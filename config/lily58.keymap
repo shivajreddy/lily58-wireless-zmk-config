@@ -76,7 +76,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        mod1ctrl {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <55 52>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -105,7 +112,7 @@
 &trans  &trans  &trans  &trans   &trans  &trans                    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans  &trans  &trans  &kp DEL  &trans  &trans                    &kp LEFT   &kp DOWN              &kp UP                 &kp RIGHT         &trans             &trans
 &trans  &trans  &trans  &kp INS  &trans  &trans  &trans    &trans  &trans     &trans                &trans                 &trans            &trans             &trans
-                        &trans   &trans  &mo 4   &trans    &trans  &trans     &trans                &trans
+                        &trans   &trans  &trans  &trans    &trans  &trans     &trans                &trans
             >;
 
             label = "RIG";
