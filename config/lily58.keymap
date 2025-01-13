@@ -76,7 +76,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ctrlshift {
+            bindings = <&kp LS(LEFT_CONTROL)>;
+            key-positions = <55 53>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
