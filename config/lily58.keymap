@@ -34,11 +34,11 @@
 
             display-name = "RIG";
             bindings = <
-&none  &kp TILDE      &trans  &trans  &trans        &trans                            &kp C_VOL_DN  &kp C_VOL_UP          &kp C_PP               &trans            &kp C_MUTE         &none
-&none  &kp ESCAPE     &trans  &trans  &trans        &trans                            &kp UNDER     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none  &kp TAB        &trans  &trans  &trans        &trans                            &kp MINUS     &kp PLUS              &kp EQUAL              &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-&none  &kp BACKSLASH  &trans  &trans  &trans        &trans  &none             &none   &kp LEFT      &kp DOWN              &kp UP                 &kp RIGHT         &kp SLASH          &trans
-                              &trans  &kp LEFT_WIN  &trans  &kp LEFT_SHIFT    &trans  &trans        &trans                &trans
+&none  &kp TILDE      &trans          &trans  &trans        &trans                            &kp C_VOL_DN  &kp C_VOL_UP          &kp C_PP               &trans            &kp C_MUTE         &none
+&none  &kp ESCAPE     &trans          &trans  &trans        &trans                            &kp UNDER     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none  &kp TAB        &kp LEFT_SHIFT  &trans  &trans        &trans                            &kp MINUS     &kp PLUS              &kp EQUAL              &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+&none  &kp BACKSLASH  &trans          &trans  &trans        &trans  &none             &none   &kp LEFT      &kp DOWN              &kp UP                 &kp RIGHT         &kp SLASH          &trans
+                                      &trans  &kp LEFT_WIN  &trans  &kp LEFT_SHIFT    &trans  &trans        &trans                &trans
             >;
 
             label = "RIG";
